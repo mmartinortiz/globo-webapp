@@ -38,11 +38,11 @@ variable "api_key" {
 }
 
 variable "tfe_organization" {
-  type = string
+  type        = string
   description = "Terraform Organization"
 }
 
 variable "tfe_workspace_name" {
-  type = string
+  type        = string
   description = "Name of the workspace"
 }
