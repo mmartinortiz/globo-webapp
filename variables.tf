@@ -2,7 +2,7 @@
 variable "region" {
   type        = string
   description = "(Optional) AWS Region to deploy in. Defaults to us-east-1."
-  default     = "us-east-1"
+  default     = "eu-north-1"
 }
 
 variable "prefix" {
@@ -36,15 +36,3 @@ variable "api_key" {
   type        = string
   description = "(Required) API key for web app to talk to SaaS platform."
 }
-
-variable "public_subnets" {
-  type        = list(string)
-  description = "(Required) List of subnet IDs for EC2 instance deployments."
-}
-
-variable "vpc_id" {
-  type        = string
-  description = "(Required) VPC ID of VPC for application deployment."
-}
-
-
